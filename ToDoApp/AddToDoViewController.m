@@ -44,6 +44,7 @@
     localNotification.alertBody = self.itemText.text;
     localNotification.alertAction = @"Show me the item";
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    // update little number icon that appears for notification
     localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
     [[UIApplication sharedApplication]scheduleLocalNotification:localNotification];
     
